@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+}
+
+
+
+header {
+
+    background-color: rgb(38, 223, 170);
+    width: 100%;
+    position:fixed;
+    z-index: 999;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px ;
+}
+
+
+
+.logo{
+    text-decoration: none;
+    color:aliceblue ;
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size:1.8em;
+}
+
+
+
+.navigasion a{
+    text-decoration: none;
+    color:aliceblue ;
+    font-weight: 500;
+    font-size:1.5em;
+    padding-left:40px;
+}
+
+
+.navigasion a:hover{
+    color: rgba(0, 0, 0, 0.71)
+}
+
+
+
+section{
+    padding: 100px 200px ;
+    background: rgb(30, 63, 81);;
+}
+
+
+
+.main{
+    width:100%;
+    min-height: 100vh;
+    display: flex ;
+    align-items: center;
+    background: url( images/code.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.main h2{
+color:aliceblue;
+font-size:1.4em;
+font-weight: 500;
+}
+
+
+
+.main h2 span{
+    display:inline-block;
+    margin-top:10px;
+    color:#5123bb;
+    font-size:3em;
+    font-weight: 600;
+}
+
+
+.main h3{
+    color: aliceblue;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5em;
+    margin-bottom: 20px;
+
+}
+.main-btn{
+color:aliceblue;
+background-color: #601cfc;
+text-decoration: none;
+font-size: 1.1em;
+font-weight: 600;
+display: inline-block;
+padding: 0.9375em 2.1875em;
+letter-spacing: 1px;
+border-radius: 15px;
+margin-bottom:40px;
+transition: 0.7s ease; 
+}
+
+
+.main-btn:hover{
+background-color:blue;
+transform: scale(1.1);
+}
+
+.social-icons a{
+
+color: rgb(38, 223, 170);
+font-size: 1.7em;
+padding-right: 40px;
+transition: 0.7s ease; 
+
+
+
+}
+.social-iconss a{
+color: rgb(248, 249, 250);
+font-size: 1.7em;
+padding-right: 40px;
+transition: 0.7s ease; 
+}
+.social-icons a :hover{
+
+    transform: scale(1.1);
+
+}
+
+.title {
+
+    display: flex;
+    justify-content: center;
+    color: rgb(38, 223, 170);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.card{
+    background-color: rgb(250, 251, 251);
+    width: 18.25em;
+    box-shadow: 0 5px 25px rgba(43, 106, 142, 0.785);
+    border-radius: 10px;
+    padding: 20px;
+    margin:10px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color: rgb(38, 223, 170);
+    font-size: 8em;
+    text-align: center;
+
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: rgb(38, 223, 170);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.info p{
+    color:  rgb(30, 63, 81);;
+}
+.project {
+    background-color: black;
+
+}
+.contact .icon {
+    font-size:4em ;
+}
+.contact .info h3{
+    color: black;
+
+}
+.contact .info p{
+    font-size: 1.1em;
+
+}
+.footer{
+    background-color: black;
+    color: aliceblue;
+    padding: 2em;
+    display:flex ;
+    justify-content: space-between;
+
+}
+.footer-title{
+    font-size: 1.1em;
+    width: 1.2;
+}
+.footer-title span{
+    color: #5123bb;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigasion a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+       font-size:1em ; 
+
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+
+    }
+    .main-content h2{
+        font-size:8.0em ; 
+ 
+     }
+     .main-content h3{
+         font-size: 1.4em;
+     }
+
+}
+
+
+@media(max-width:200px){
+    body{
+        font-size: 6px;
+    }
+}
+@media (max-width:390px){
+    body {
+        size: 6px;
+    }
+    header{
+        padding: 12px 2em;
+    }
+    .navigasion a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+        min-height: 100vh;
+
+    }
+    .main-content h2{
+       font-size:1em ; 
+
+    }
+    .main-content h3{
+        font-size: 1em;
+        
+    }
+    .main h3{
+        margin-top: 20em;
+    }
+
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+        background-position: center;
+    }
+    
+}
